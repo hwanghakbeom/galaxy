@@ -1,384 +1,399 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <title>Carousel Template · Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-<%= stylesheet_link_tag "bootstrap.css" %>
-<%= stylesheet_link_tag "bootstrap-responsive.css" %>
-    <style>
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title><%= "#{@title} | #{SITE_TITLE}" %></title><!DOCTYPE html>   
+  <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">  
+  <link href="vendor/bootstrap/css/prettify.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/docs.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <style type="text/css">  
+  .socials {  
+  padding: 10px;  
+  }  
+  </style>  
+  <script type='text/javascript'>
+  function change_class(elem){
+      var parentDiv = elem.parentNode;
+    if(parentDiv.className == "dropdown open" ){
+      alert(elem.parentDiv.className);
+      parentDiv.className = "dropdown";
+      alert(elem.parentDiv.className);
+    }else{
+      alert(elem.parentDiv.className);
+      parentDiv.className = "dropdown open";
+      alert(elem.parentDiv.className);
     }
+  }
+  </script>
+</head>  
+<body>  
+<div id="fb-root"></div>  
+<script>(function(d, s, id) {  
+  var js, fjs = d.getElementsByTagName(s)[0];  
+  if (d.getElementById(id)) return;  
+  js = d.createElement(s); js.id = id;  
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";  
+  fjs.parentNode.insertBefore(js, fjs);  
+}(document, 'script', 'facebook-jssdk'));</script>  
+<div class="navbar navbar-fixed-top">  
+  <div class="navbar-inner">  
+    <div class="container">  
+    <ul class="nav">  
+    <li class="active">  
+      <a class="brand" href="http://14.63.164.245">EVA</a>  
+    </li>  
+    <li><a href="#about">About</a></li>   
+  </ul>  
+  <ul class="nav pull-right">  
+    <li><a href="#work">Recent Work</a></li>  
+    <li><a href="/presentation">Presentation</a></li>  
+    <!-- <li><a href="#video">Videos</a></li>   -->
+    <li><a href="#members">Members</a></li>  
+    <li><a href="http://evacast.net">Evacast</a></li>
+  </ul>  
+    </div>  
+  </div>  
+</div>  
 
 
+<center>
+<img src = "/images/main.jpg" style="width: 960px; height=: 490px;">
+</center>
+<hr id='about'>
 
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
+<br>
+<div class = "row-fluid" id="abouteva">
+  <h2> &nbsp;&nbsp; About</h2>
+  <div class = 'span1'></div>
+    <div class ="span10">
+    <center>
+      <h4>EVA는 2003년 3월에 시작되었으며, 회원 수는 약 50명이다. Pattern과 소프트웨어 공학 지식을 외부에 알린다는 의미로 Eva(Evangelism)라는 이름으로 활동하고 있다. 소프트웨어 공학을 공부하고, 배웠던 지식을 산업계, 학계, 커뮤니티에 전파하는 역할을 하는 것이 목적이 다. 소프트웨어 공학, 아키텍쳐, facebook, ACE, TAO, Android를 주제로 다양한 도메인의 회원들이 모여 90여개가 넘는 무료 Webcast를 공유, 잡지 기고, 패턴 만들기 등 활동을 하고 있다.</h4>
+      </center>
+    </div>
+    <div class = 'span1'></div>
+</div>
+<hr id='work'>
+<br>
+<div class = "row-fluid" id="recent-work">
+  <div class = "span12">
+    <h2><a  style="text-decoration:none; color: #800000">&nbsp;&nbsp; Recent Work </a></h2>
+    <div class="row-fluid">
+      <div class="span3">
+        <center>
+        <p>
+          <a href="http://www.noranbook.net/detail.asp?isbn=8993827338&amp;url=back">
+            <img class=" wp-image-3033 alignleft" title="소프트웨어 아키텍트가 알아야할 97가지" alt="" src="http://arload.files.wordpress.com/2011/04/sw_architect_e.jpg?w=158&amp;h=208" width="158" height="208">
+          </a>
+        </p>
+        </center>
+      </div>
+      <div class="span7">
+      <center>
+      <br>
+        <p>책소개 &nbsp;: &nbsp;소프트웨어 아키텍트로서 성공하려면, 비즈니스와 기술을 모두 익힐 필요가 있다. 이 책은 소프트웨어 아키텍트들이 무엇을 중요하게 생각하고, 어떻게 프로젝트를 접근하는지를 알려 준다. 48명 이상의 저자들의 합작품이며, 이들 모두 아무런 보상없이 소프트웨어 아키텍처에 대한 자신들의 생각과 충고를 제공했다. 어떤 측면에서 진정한 의미의 오픈 소스 서적이다. 각 저자들은 자신들의 생각을 썼고, 그 내용들은 여러 저자를 통해 살펴보고 편집되었다. 그리고 나서, 가장 좋은 내용들을 모아 지금의 책이 되었다. 이 책은 개인의 지식이나 지혜보다, 코드로 공헌하는 오픈 소스 소프트웨어 프로젝트와 크게 다를 바가 없다.</p>
+        </center>
+      </div>
+      <div class="span2"></div>
+    </div>
+  </div>
+</div>
+<hr id="presentation">
+<br>
+      <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; 볼거리 </a></h2>
+<div class = "row-fluid" >
+  <div class = 'span1'></div>
+  <div class = "span10">
 
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
-
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
-
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
-
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-    }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-<%= javascript_include_tag "html5shiv.js" %>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
-
-  <body>
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <%= image_tag "main.gif"%>
-          <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
+      <div id="this-carousel-id" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+    <center>
+      <div class="row-fluid">
+        <div class="span3">
+          <center>
+          <p><a href="https://docs.google.com/file/d/0BycXcL3KpwkWZThsSk5RWGItTVk/edit?usp=sharing"><img src = "/images/kcd3_ftp.png"></a></p>
+          </center>
         </div>
-        <div class="item">
-          <%= image_tag "main.gif" %>
-          <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
         </div>
-        <div class="item">
-          <%= image_tag "main.gif"%>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
+        </div>
+    <!-- <iframe src="https://docs.google.com/a/favoritemedium.com/file/d/0B5di0w0aMxhxaG54YlhlV0tINW8/preview" width="640" height="480"></iframe> -->
+      </div>
+      
+      <div class="carousel-caption">
+        <p>발표자료</p>
+      </div>
+      </center>
+    </div>
+    <div class="item">
+    <center>
+            <div class="row-fluid">
+        <div class="span3">
+          <center>
+          <p><a href="http://www.devpia.com/net2/evacast/Lecture/?cu=view&r=&itemseq=171"><img src = "/images/02refactoring.png"></a></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><a href="http://www.devpia.com/net2/evacast/Lecture/?cu=view&r=&itemseq=148"><img src = "/images/frameworkeng.png"></a></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/02refactoring.png"></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/02refactoring.png"></p>
+          </center>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    </div><!-- /.carousel -->
+       <div class="carousel-caption">
+        <p>영상자료</p>
+      </div> 
+      </center>
+    </div>
+  </div>
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div>
+  </div>
+  <div class = 'span1'></div>
+</div>
 
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span5">
-          <h2>Naver Cafe</h2>
-          <p><a class="btn" href="#">View details »</a></p>
-        </div><!-- /.span4 -->
-        <div class="span6">
-          <h2>Daum Cafe</h2>
-          <p><a class="btn" href="#">View details »</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+<!-- <hr id='presentation'>
+<br>
+<div class = "row-fluid" id="presentation">
+  <div class = "span12">
+    <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; Presentation </a></h2>
+      <div class="row-fluid">
+        <div class="span3">
+          <center>
+          <p><a href="https://docs.google.com/file/d/0BycXcL3KpwkWZThsSk5RWGItTVk/edit?usp=sharing"><img src = "/images/kcd3_ftp.png"></a></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/kcd3_ftp.png"></p>
+          </center>
+        </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  </div>
+</div>
+<hr id='video'>
+<br>
+<div class = "row-fluid" id="video">
+  <div class = "span12">
+    <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; Videos </a></h2>
+      <div class="row-fluid">
+        <div class="span3">
+          <center>
+          <p><a href="http://www.devpia.com/net2/evacast/Lecture/?cu=view&r=&itemseq=171"><img src = "/images/02refactoring.png"></a></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><a href="http://www.devpia.com/net2/evacast/Lecture/?cu=view&r=&itemseq=148"><img src = "/images/frameworkeng.png"></a></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/02refactoring.png"></p>
+          </center>
+        </div>
+        <div class="span3">
+                    <center>
+          <p><img src = "/images/02refactoring.png"></p>
+          </center>
+        </div>
       </div>
+  </div>
+</div>
 
-      <hr class="featurette-divider">
+ -->
+<hr id='members'>
+<br>
+<div class = "row-fluid" id="member">
+<style>
+figure {
+  position: relative;
+  display: block;
+  border: 1px solid #333;
+  margin: 5px 0 10px 0;
+}
 
-      <div class="featurette">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+/* Style the figure captions, hiding them by default */
+
+figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .7em;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+/* Display the captions on hover */
+
+figure:hover figcaption {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);
+}
+
+/* Add padding and margin to the caption contents */
+
+figcaption * {
+  padding: 0 10px;
+  margin: 0;
+}
+
+figcaption *:first-child {
+  padding-top: 5px;
+}
+figcaption *:last-child {
+  padding-bottom: 5px;
+}
+
+/* Give captions and headings their own font */
+
+figcaption, h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+  <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; Members</a> </h2>
+  <center>
+  <% row = 0 %>
+  <% @photoaddress.each do |urlinfo| %>
+    <% if row%10 == 0 %>
+    <div class = "row-fluid">
+    <div class = "span1"></div>
+    <% end %>
+    <% row = row +1 %>
+      <div class = "span1">
+        <figure style="width: 110px; height: 110px">
+        <img src = <%= urlinfo[:url] %> >
+        <figcaption><h4><%= urlinfo[:name] %></h4></figcaption>
+      </figure>
       </div>
+    <% if row%10 == 0 %>
+    <div class = "span1"></div>
+    </div>
+    <% end %>
+  <% end %>
+  </center>
+</div>
 
-      <hr class="featurette-divider">
+<hr>
+<!-- 
+<div class = "row-fluid" id="presentation">
+<div class = "span1"></div>
+  <div class = "span11">
+  <ul class="rslides" id="slider1" style="list-style-type: none;">
+  <li style="list-style-type: none;"><img src="/images/guinness1.jpg" alt=""></li>
+  <li style="list-style-type: none;"><img src="/images/miller.jpg" alt=""></li>
+  <li style="list-style-type: none;"><img src="/images/chicken.jpg" alt=""></li>
+  <li style="list-style-type: none;"><img src="/images/wine.jpg" alt=""></li>
+  </ul>
+</div>
+</div> -->
 
-      <!-- /END THE FEATURETTES -->
 
+<!--<hr>
+ <div>
+&nbsp;&nbsp; 페이스북 좋아요 --- 들어갈 예정 
+</div>
+ --><div class = "row-fluid" >
+<div class = "span1" ></div>
+<div class = "span10">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'evarchitect'; // required: replace example with your forum shortname
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Company, Inc.</p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-       <%= javascript_include_tag "jquery.js" %>
-    <%= javascript_include_tag "bootstrap-transition.js" %>
-    <%= javascript_include_tag "bootstrap-alert.js" %>
-    <%= javascript_include_tag "bootstrap-modal.js" %>
-    <%= javascript_include_tag "bootstrap-dropdown.js" %>
-    <%= javascript_include_tag "bootstrap-scrollspy.js" %>
-    <%= javascript_include_tag "bootstrap-tab.js" %>
-    <%= javascript_include_tag "bootstrap-tooltip.js" %>
-    <%= javascript_include_tag "bootstrap-popover.js" %>
-    <%= javascript_include_tag "bootstrap-button.js" %>
-    <%= javascript_include_tag "bootstrap-collapse.js" %>
-    <%= javascript_include_tag "bootstrap-carousel.js" %>
-    <%= javascript_include_tag "bootstrap-typeahead.js" %>
-<script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
     </script>
-<%= javascript_include_tag "holder.js" %>
-  
+    <noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<div class = "span1" ></div>
+</div>   
 
-</body></html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/vendor/bootstrap/js/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/vendor/responsiveslides.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    });
+  });
+</script>
+<script>
+(function($) { $('#slider1').responsiveSlides( {speed:1000,timeout:5000} ) }(jQuery))
+</script>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'evarchitect'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
+
+<hr>
+<p>Copyright © 2013 EVA and Guinness warelicense</p>
+<script type="text/javascript">  
+  (function() {  
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;  
+    po.src = 'https://apis.google.com/js/plusone.js';  
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);  
+  })();  
+</script>  
+</body>  
+</html>   
