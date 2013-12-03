@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title>은하수 전통돌상에 오신것을 환영합니다 </title><!DOCTYPE html>   
+  <%= stylesheet_link_tag "bootstrap.css" %>
+<!--   <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "prettify.css" %>
+  <%= stylesheet_link_tag "docs.css" %> -->
+  <%= stylesheet_link_tag "bootstrap-responsive.css" %> 
+  <%= javascript_include_tag "bootstrap.min.js" %>
+  <%= javascript_include_tag "bootstrap.js" %>
+
+  <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+</head>  
+<body>  
+<div class="container">
+<div class="masthead">
+        <h3 class="muted">은하수 돌상</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">상품소개</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#">예약 및 상담</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+<center>
+<%= image_tag("main.gif", :height => '300', :width => '966') %>
+</center>
+<div class = "row-fluid" id="abouteva">
+    <div class ="span12">
+    <center>
+      <h4>은하수 돌상에 오신것을 환영합니다.</h4>
+      <h4>예약문의 : 010-2992-8086</h4>
+      </center>
+    </div>
+</div>
+<hr id="presentation">
+      <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; 상품소개 </a></h2>
+<div class = "row-fluid" >
+  <div class = 'span1'></div>
+  <div class = "span5">
+  <center>
+  <a href="http://cafe.naver.com/ehsdolsang/15"><%= image_tag('mary.jpeg', :height => '240', :width => '360') %></a><br><br>
+   <h4>2단 돌상</h4></center>
+</div>
+<div class = "span5">
+<center>
+<a href="http://cafe.naver.com/ehsdolsang/17"><%= image_tag('mary.jpeg', :height => '240', :width => '360') %></a> <br><br>
+<h4>1단 돌상</h4></center> 
+</div>
+<div class = 'span1'></div>
+  </div>
+
+<hr id="presentation">
+      <h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; 포트폴리오 </a></h2>
+<div class="row-fluid">
+  <div class = "span1"></div>
+  <div class = "span10">
+  <div class="row-fluid">
+    <div class="span3">
+      <center>
+      <p><a href="http://pkh_1004.blog.me/40200113784?Redirect=Log&from=postView"><%= image_tag('mary.jpeg', :height => '180', :width => '270') %></a></p><br>홍대메리골드
+      </center>
+    </div>
+    <div class="span3">
+      <center>
+      <p><a href="http://pkh_1004.blog.me/40199848278?Redirect=Log&from=postView"><%= image_tag('island.JPG', :height => '180', :width => '270') %></a></p><br>강화도펜션
+      </center>
+    </div>
+    <div class="span3">
+      <center>
+      <p><a href="http://pkh_1004.blog.me/40200113784?Redirect=Log&from=postView"><%= image_tag('mary.jpeg', :height => '180', :width => '270') %></a></p><br>분당믹스드원
+      </center>
+    </div>
+    <div class="span3">
+      <center>
+      <p><a href="http://pkh_1004.blog.me/40200113784?Redirect=Log&from=postView"><%= image_tag('mary.jpeg', :height => '180', :width => '270') %></a></p><br>구리시호텔
+      </center>
+    </div>
+  </div>
+  </div>
+  <div class = "span1"></div>
+</div>
+<hr> 
+<div class = "row-fluid" id="blog">
+ <div class="span6">
+  <center><a href="http://cafe.naver.com/ehsdolsang"><%= image_tag('bi_naver.gif') %><%= image_tag('h_cafe.gif') %></a></center>
+  </div>
+   <div class="span6">
+  <center><a href="http://blog.naver.com/PostThumbnailList.nhn?blogId=pkh_1004&parentCategoryNo=125"><%= image_tag('bi_naver.gif') %>블로그 </a></center>
+  </div>
+</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<%= javascript_include_tag "responsiveslides.min.js" %>
+<%= javascript_include_tag "jquery.js" %>
+<%= javascript_include_tag "bootstrap-transition.js" %>
+<%= javascript_include_tag "bootstrap-alert.js" %>
+<%= javascript_include_tag "bootstrap-modal.js" %>
+<%= javascript_include_tag "bootstrap-dropdown.js" %>
+<%= javascript_include_tag "bootstrap-scrollspy.js" %>
+<%= javascript_include_tag "bootstrap-tab.js" %>
+<%= javascript_include_tag "bootstrap-tooltip.js" %>
+<%= javascript_include_tag "bootstrap-popover.js" %>
+<%= javascript_include_tag "bootstrap-button.js" %>
+<%= javascript_include_tag "bootstrap-collapse.js" %>
+<%= javascript_include_tag "bootstrap-carousel.js" %>
+<%= javascript_include_tag "bootstrap-typeahead.js" %>
+
+</body>  
+</html>   
