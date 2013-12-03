@@ -1,4 +1,5 @@
 class PortfolioController < ApplicationController
-	def show
+	def index
+		notice: "Project is created"
 	end
 end

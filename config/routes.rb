@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :layouts
-  map.resources :posts
+  map.connect 'portfolio', :controller => 'portfolio', :action => 'index'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
