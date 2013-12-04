@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :layouts
   map.resources :portfolio, :controller => 'portfolio', :action => 'index'
-  map.contact '/contact', :controller => 'contact', :action => 'show'
+  map.contact '/contact', :controller => 'contacts', :action => 'show'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
