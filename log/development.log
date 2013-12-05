@@ -18422,3 +18422,64 @@ Processing HomeController#index (for 119.67.234.85 at 2013-11-29 23:45:59) [GET]
   Parameters: {"action"=>"index", "controller"=>"home"}
 Rendering home/index
 Completed in 0.00460 (217 reqs/sec) | Rendering: 0.00224 (48%) | DB: 0.00000 (0%) | 200 OK [http://xn--pq1bt9vm3a34kppu.com/]
+
+
+Processing HomeController#index (for 103.16.26.83 at 2013-12-05 10:03:28) [GET]
+  Session ID: def28074ef04e8840701b84dfaa2ec37
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/layout
+Rendering home/index
+Completed in 0.01524 (65 reqs/sec) | Rendering: 0.01268 (83%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
+
+
+Processing HomeController#index (for 103.16.26.83 at 2013-12-05 10:03:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--a78c90de17547234a107a076cda9a4d9d3797c0b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/layout
+Rendering home/index
+Completed in 0.01514 (66 reqs/sec) | Rendering: 0.01257 (83%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
+
+
+Processing HomeController#index (for 123.140.249.101 at 2013-12-05 10:03:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--a78c90de17547234a107a076cda9a4d9d3797c0b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/layout
+Rendering home/index
+Completed in 0.00610 (164 reqs/sec) | Rendering: 0.00353 (57%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
+
+
+Processing PortfolioController#index (for 103.16.26.83 at 2013-12-05 10:04:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--a78c90de17547234a107a076cda9a4d9d3797c0b
+  Parameters: {"action"=>"index", "controller"=>"portfolio"}
+Rendering template within layouts/layout
+Rendering portfolio/index
+Completed in 0.00865 (115 reqs/sec) | Rendering: 0.00613 (70%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/portfolio]
+
+
+Processing HomeController#index (for 103.16.26.83 at 2013-12-05 10:04:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--a78c90de17547234a107a076cda9a4d9d3797c0b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/layout
+Rendering home/index
+Completed in 0.00549 (182 reqs/sec) | Rendering: 0.00315 (57%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
+
+
+Processing PortfolioController#index (for 103.16.26.83 at 2013-12-05 10:04:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--a78c90de17547234a107a076cda9a4d9d3797c0b
+  Parameters: {"action"=>"index", "controller"=>"portfolio"}
+Rendering template within layouts/layout
+Rendering portfolio/index
+Completed in 0.00593 (168 reqs/sec) | Rendering: 0.00328 (55%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/portfolio]
+
+
+Processing HomeController#index (for 123.140.249.101 at 2013-12-05 10:08:08) [GET]
+  Session ID: 702a7cd40b04e79b3828c804cb67ccba
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/layout
+Rendering home/index
+Completed in 0.00603 (165 reqs/sec) | Rendering: 0.00349 (57%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
