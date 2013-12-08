@@ -18483,3 +18483,22 @@ Processing HomeController#index (for 123.140.249.101 at 2013-12-05 10:08:08) [GE
 Rendering template within layouts/layout
 Rendering home/index
 Completed in 0.00603 (165 reqs/sec) | Rendering: 0.00349 (57%) | DB: 0.00000 (0%) | 200 OK [http://hwanghakbeom.cafe24.com/]
+  [4;36;1mSQL (0.000784)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000314)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20131119092924)
+  [4;36;1mSQL (0.000189)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20131208004349)
+  [4;35;1mSQL (0.000188)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.009294)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT NULL NULL, "password" varchar(255) DEFAULT NULL NULL, "name" varchar(255) DEFAULT NULL NULL, "phone" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000672)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20131208004349')[0m
+  [4;35;1mSQL (0.000274)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000324)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000073)[0m   [0mPRAGMA index_list("posts")[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mPRAGMA index_list("users")[0m

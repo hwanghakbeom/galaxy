@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :users
+
   map.resources :layouts
   map.resources :portfolio, :controller => 'portfolio', :action => 'index'
   map.resources :product, :controller => 'product', :action => 'index'
